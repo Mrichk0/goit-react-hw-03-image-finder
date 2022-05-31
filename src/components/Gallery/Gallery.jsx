@@ -87,8 +87,6 @@ class Gallery extends Component {
             <div className={styles.App}>
             <header className={styles.Searchbar}>
                 <SearchBar onSubmit={setSearch} />
-              
-                {/* {!loading && Boolean(hits.length) } */}
                 </header>
                   {loading && <Loader/>}
                 {Boolean(hits.length) && (
